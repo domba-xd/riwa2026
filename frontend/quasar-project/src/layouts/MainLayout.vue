@@ -11,7 +11,7 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title> Quasar App </q-toolbar-title>
+        <q-toolbar-title class="text-h3 text-weight-bolder"> Razvoj Interaktivnih Web aplikacija - Vježba </q-toolbar-title>
 
         <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
@@ -41,59 +41,47 @@ import EssentialLink from '@/components/EssentialLink.vue'
 
 const linksList = [
   {
-    label: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
-  },
-  {
     label: 'GitHub',
-    caption: 'github.com/quasarframework',
+    caption: 'github.com/LeniJuresa',
     icon: 'code',
-    link: 'https://github.com/quasarframework'
+    link: 'https://github.com/lenijuresa'
+  },
+    {
+    label: 'Popis knjiga',
+    caption: 'knjige',
+    icon: 'book',
+    link: '#/popis_knjiga'
+  },
+      {
+    label: 'Pretraživanje',
+    caption: 'search',
+    icon: 'search',
+    link: '#/pretrazivanje'
   },
   {
-    label: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    label: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    label: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    label: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    label: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
-  },
-  {
-    label: 'Users',
-    caption: 'Stranica za korisnike projekta',
+    label: 'O nama',
+    caption: 'about us',
     icon: 'person',
-    link: '/#users'
+    link: '#/o_nama '
   },
   {
-    label: 'User',
-    caption: 'Stranica za korisnike projekta NOOV UPGREJDANO 9000',
-    icon: 'person',
-    link: '/#user'
-  }
+    label: 'Naša lokacija',
+    caption: 'location',
+    icon: 'map',
+    link: '#/lokacija'
+  },
+  {
+    label: 'Prijava',
+    caption: 'login',
+    icon: 'login',
+    link: '#/login'
+  },
+  {
+    label: 'Registracija',
+    caption: 'register',
+    icon: 'account_box',
+    link: '#/registracija'
+  },
 ]
 
 const leftDrawerOpen = ref(false)
