@@ -11,7 +11,7 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title> Quasar App </q-toolbar-title>
+        <q-toolbar-title> Knjižnica </q-toolbar-title>
 
         <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
@@ -41,58 +41,40 @@ import EssentialLink from '@/components/EssentialLink.vue'
 
 const linksList = [
   {
-    label: 'Docs',
-    caption: 'quasar.dev',
+    label: 'Popis Knjiga',
+    caption: 'Ovdje se nalazi popis svih knjiga',
     icon: 'school',
-    link: 'https://quasar.dev'
+    link: '/popis_knjiga'
   },
   {
-    label: 'GitHub',
-    caption: 'github.com/quasarframework',
+    label: 'Pretraživanje',
+    caption: 'Ovdje pretražujete knjige',
     icon: 'code',
-    link: 'https://github.com/quasarframework'
+    link: '/pretrazivanje'
   },
   {
-    label: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
+    label: 'O nama',
+    caption: 'ovdje se nalaze naše informacije',
     icon: 'chat',
-    link: 'https://chat.quasar.dev'
+    link: '/o_nama'
   },
   {
-    label: 'Forum',
-    caption: 'forum.quasar.dev',
+    label: 'Lokacija',
+    caption: 'Naša lokacija',
     icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
+    link: '/lokacija'
   },
   {
-    label: 'Twitter',
-    caption: '@quasarframework',
+    label: 'Login',
+    caption: 'Ovdje se Ulogirate',
     icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
+    link: '/login'
   },
   {
-    label: 'Facebook',
-    caption: '@QuasarFramework',
+    label: 'Registracija',
+    caption: 'Ovdje se registrirajte',
     icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    label: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
-  },
-  {
-    label: 'Users',
-    caption: 'Stranica za korisnike projekta',
-    icon: 'person',
-    link: '/#users'
-  },
-  {
-    label: 'User',
-    caption: 'Stranica za korisnike projekta NOOV UPGREJDANO 9000',
-    icon: 'person',
-    link: '/#user'
+    link: '/registracija'
   }
 ]
 
